@@ -22,13 +22,12 @@ def func_choice_menu():
 
 
 def print_message(msg):
-    print("\n-------------------------\n")
+    print("----------------------------------------")
     print(msg)
-    print("\n-------------------------\n")
 
 
 def func_choice_open():
-    selection = input(text.file_open_error)
+    selection = input(text.file_open_ot_empty)
     if selection.lower() == 'y':
         return True
     return False
@@ -36,11 +35,14 @@ def func_choice_open():
 
 def print_contacts(dict_data, message):
     if dict_data:
+        print("\nСписок контактов:\n")
+        print("----------------------------------------")
         for key, value in dict_data.items():
-            print(f"ИД: {key}")
+            print(f"ИД: {key}",  end=" ")
             for key1, value1 in value.items():
-                print_message(f"\t{key1}  : {value1} ")
-            print("\n-------------------------\n")
+                print(f"\t{key1}  : {value1} ")
+
+            print("----------------------------------------")
         print("\n\n")
     else:
         print_message(message)
@@ -59,7 +61,3 @@ def add_contact_message(message: str):
 
 def input_data_search(message):
     return input(message).strip()
-
-
-if __name__ == '__main__':
-    show_menu()
