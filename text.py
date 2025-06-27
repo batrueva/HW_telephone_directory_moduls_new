@@ -19,24 +19,30 @@ input_menu = [
 ]
 
 menu_input_mess = f"Введите число от 1 до {len(main_menu)-1}]:"
-message_out = "Изменения будут потеряны, продолжить без сохранения?(y/n):"
-error_message = "Некорректный ввод"
+message_out = "Изменения будут потеряны, сохранить изменения?(y/n):"
+error_message = "\nНекорректный ввод. "
 
-file_open_successfully = "Файл прочитан успешно\n\n\n"
-file_save_text = "Файл успешно сохранен\n\n\n"
-file_open_error = "Файл не прочитан {}"
-file_open_ot_empty = "Справочник не пустой, изменения будут потеряны, продолжить(y/n):"
+file_open_successfully = "Файл прочитан успешно\n"
+file_open_error = "Ошибка открытия файла {}"
 
+file_save_sccessfully = "Файл успешно сохранен\n"
+file_save_error = "Ошибка сохранения файла {}"
+
+
+file_open_not_empty = "Справочник не пустой, изменения будут потеряны, продолжить(y/n):"
 dict_empty_error = "Справочник пустой"
 
 contact_add_message = "Контакт {} успешно добавлен"
 contact_add_error = "Ошибка добавления контакта {}"
 
 contact_upd_message = "Контакт {} успешно изменен"
-contact_upd_error = "Ошибкаизменения  контакта {}"
+contact_upd_error = "Ошибка изменения  контакта {}"
 
 contact_del_message = "Контакт {} успешно удален"
 contact_del_error = "Ошибка удаления контакта {} "
+
+contact_phone_error = "Номер телефона должен начинаться с +7 и содержать 12 цифр"
+contact_data_empty = "Не может быть добавлен пустой контакт"
 
 input_value_search = "Введите строку поиска:"
 error_search_message = "Контакты содержащие {} не найдены"
